@@ -33,9 +33,6 @@
 body {
     max-width: 1440px;
     height: auto;
-    background-color: beige;
-    border: solid 1px rgb(29, 24, 24);
-    color: var(--neutral-white);
 }
 p {
     font-size: 14px;
@@ -44,6 +41,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     background-color: var(--dark-blue-main);
+    color: var(--neutral-white);
 }
 .item1 {
     display: grid;
@@ -51,7 +49,7 @@ p {
     vertical-align: middle;
     font-size: .85rem;
     background-color: var(--dark-blue-intro);
-    margin-bottom: 30px;
+    padding: 30px;
 }
 .item1 .item1-1 {
     display: grid;   
@@ -173,6 +171,9 @@ p {
     margin: 15px;
     align-content: center;
 }
+.item5-2 a {
+    color: var(--cyan-inside);
+}
 .item5-2 h3, p {
    padding-bottom: 20px;
 }
@@ -181,9 +182,6 @@ p {
     grid-template-columns: 1fr 4fr 4fr 4fr;
     margin: 60px 5% 100px 5%;
 } 
-.item6-1 {
-   
-}
 .item6-2, .item6-3, .item6-4 {
     display: grid;
     grid-template-columns: 1fr;
@@ -246,7 +244,7 @@ button {
     background-color: var(--cyan-inside);
     color: white;
     font-weight: 700;
-    font-size: .9em;
+    font-size: .65em;
 }
 .item8 {
     display: grid;
@@ -257,6 +255,10 @@ button {
     padding-bottom: 20px;
     margin-top: -80px;
     background-color: var(--dark-blue-footer);
+}
+.item8 img {
+    width: 12%; 
+    height: auto;
 }
 .item9 {
     display: grid;
@@ -270,13 +272,6 @@ button {
     grid-template-columns: 1fr 8fr;
     justify-items: start;
     padding: 0 30px 0 0;
-
-}
-.item9-1 img {
-    background-color: blanchedalmond;
-}
-.item9-1 p {
-   
 }
 .item9-2 {
     display: grid;
@@ -287,7 +282,6 @@ button {
     display: grid;
     grid-template-columns: 1fr 6fr;
 }
-
 .item9-2b {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -302,16 +296,10 @@ button {
     grid-template-columns: 1fr;
     align-content: flex-start;
 }
-.item9-3a p {
-    
-}
 .item9-3b {
     display: grid;
     grid-template-columns: 1fr;
     align-content: flex-start;
-}
-.item9-3b p {
-    
 }
 .item9-4 {
     display: grid;
@@ -321,3 +309,149 @@ button {
 .item9-4 img {
     background-color: rgb(49, 212, 112);
 }
+@media screen and (max-width: 370px) {
+    .item1 {
+        grid-template-columns: 1fr 2fr;
+        padding: 20px 10px 20px 20px;
+    }
+    .item1 .item1-2 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item1-1 img {
+        width: 70%; 
+    }
+    .item2 h3 {
+        width: 75%;
+        font-size: smaller;
+    }
+    .item2 p {
+        width: 95%;
+    }
+    .item2 button {
+        width: 65%;
+        margin-bottom: 50px;
+    }
+    .item2 img {
+        width: 75%;
+    }
+    .item3 {
+        grid-template-columns: 1fr;   
+    }
+    .item4 { 
+        grid-template-columns: 1fr;
+    }
+    .item5 {
+        grid-template-columns: 1fr;
+    }
+    .item6 {
+        grid-template-columns: 1fr;
+        margin: 60px 5% 60px 5%;
+    } 
+    .item7 {
+        width: 80%;
+        padding: 5px;
+    }
+    button {
+        margin: 10px;
+    }
+    .item7-2 {
+        grid-template-columns: 1fr;
+    }
+    .item8 img {
+        width: 30%; 
+        height: auto;
+    }
+    .item9 {
+        grid-template-columns: 1fr;
+    }
+    .item9-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .item9-3 {
+        grid-template-columns: 1fr; 
+        justify-items: start;
+    }
+    .item9-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .item9-4 img {
+        background-color: rgb(49, 212, 112);
+    }
+}
+
+@media screen and (max-width: 880px) { 
+    .item1 {
+        grid-template-columns: 1fr 2fr;
+        padding: 20px 10px 20px 20px;
+    }
+    .item1 .item1-2 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item1-1 img {
+        width: 70%; 
+    }
+    .item2 h3 {
+        width: 75%;
+        font-size: smaller;
+    }
+    .item2 p {
+        width: 95%;
+    }
+    .item2 button {
+        width: 65%;
+        margin-bottom: 50px;
+    }
+    .item2 img {
+        width: 75%;
+    }
+    .item3 {
+        grid-template-columns: 1fr;   
+    }
+    .item4 { 
+        grid-template-columns: 1fr;
+    }
+    .item5 {
+        grid-template-columns: 1fr;
+    }
+    .item6 {
+        grid-template-columns: 1fr;
+        margin: 60px 5% 60px 5%;
+    } 
+    .item7 {
+        width: 80%;
+        padding: 5px;
+    }
+    button {
+        margin: 10px;
+    }
+    .item7-2 {
+        grid-template-columns: 1fr;
+    }
+    .item8 img {
+        width: 30%; 
+        height: auto;
+    }
+    .item9 {
+        grid-template-columns: 1fr;
+    }
+    .item9-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .item9-3 {
+        grid-template-columns: 1fr; 
+        justify-items: start;
+    }
+    .item9-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .item9-4 img {
+        background-color: rgb(49, 212, 112);
+    }
+}
+  
